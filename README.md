@@ -74,6 +74,6 @@ sudo monit && sudo monit reload
 sudo monit start delayed_job
 ```
 
-#TROUBLESHOOTING:
+# TROUBLESHOOTING:
 1. check monit log: "/var/log/monit.log"
 2. check the script output log that you define in "/etc/init.d/delayed_job"
