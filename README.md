@@ -56,8 +56,10 @@ check process delayed_job
 - note the command "su - ubuntu -c"
 - to allow switching to other user account without entering password, you'll need to add the following lines right below the pam_rootok.so line in your /etc/pam.d/su:
 
+```
 auth       [success=ignore default=1] pam_succeed_if.so user = ubuntu
 auth       sufficient   pam_succeed_if.so use_uid user = ubuntu
+```
 
 4. 
 - Done all the above?
